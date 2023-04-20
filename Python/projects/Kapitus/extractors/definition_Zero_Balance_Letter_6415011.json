@@ -1,0 +1,212 @@
+{"definitions": [
+ {
+    "name": "Loan Amount",
+    "group": "Amout",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["amount","Amount","Amount Requested"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["How much is the loan amount?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+  {
+    "name": "Loan Paid Amount",
+    "group": "Amout",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["amount","$"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["How much payback was done ?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+ {
+    "name": "Loan Start date",
+    "group": "Date",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Date","Inception","January","February", "March", "April", "May", "June","July", "August", "September","October","November","December","Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov","Dec"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["on What date funding was secured?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+ {
+    "name": "Loan End date",
+    "group": "Date",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Date","January","February", "March", "April", "May", "June","July", "August", "September","October","November","December","Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov","Dec"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is loan complete date?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  }
+    ,
+
+ {
+    "name": " Lender",
+    "group": "Lender",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["provided","gave","loaned","lend"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["Who gave the loan?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": " Borrower",
+    "group": "Borrower",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Borrower:","Borrower","borrower","borrow","recieved","got","funding for"," provided"," provided you"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["Loan was given to which business?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": " Address",
+    "group": "Address",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Address:","Address","Business Address"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is the address?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  }
+     
+     
+]
+}

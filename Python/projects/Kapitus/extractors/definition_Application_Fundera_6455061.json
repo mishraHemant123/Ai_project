@@ -1,0 +1,452 @@
+{"definitions": [
+ {
+    "name": "Loan Amount",
+    "group": "Amout",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Amount Requested"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is the requested loan amount?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+  {
+    "name": "Usage",
+    "group": "Usage",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Use of Proceeds","Proceeds"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is Use of Proceeds ?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+ {
+    "name": "Business Inception  Date",
+    "group": "Date",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Business Inception"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is the Business Inception Date?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+ {
+    "name": "Annual Revenue",
+    "group": "Revenue",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Annual Revenue"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is Annual Revenue?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  }
+    ,
+
+ {
+    "name": "Monthly Rent/Lease",
+    "group": "Monthly Rent/Lease",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Monthly Rent/Lease ","is providing","loaned","lend"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["How much is Monthly Rent/Lease?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": " Business Name ",
+    "group": "Borrower",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Business Legal Name"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is the legal name of business?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": " Address",
+    "group": "Address",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Address:","Address","Business Address"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is the address?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": " Entity Type",
+    "group": "Entity Type",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Entity Type:","Entity Type"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is Entity Type?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": "Federal Tax ID # (EIN)",
+    "group": "Federal Tax ID # (EIN)",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Federal Tax ID # (EIN)","Federal Tax ID"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is Federal Tax ID?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": "City",
+    "group": "City",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["City"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is the name of City?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": "State",
+    "group": "State",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["State"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is the name of State ?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": "Business Phone ",
+    "group": "Business Phone ",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Business Phone"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is Business Phone?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": "Business Description",
+    "group": "Business Description",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Business Description"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["What is Description of Business?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": "Personal Annual Income",
+    "group": "Personal Annual Income",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Personal Annual Income"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["How much is Peronsal annual income?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  },
+    
+ {
+    "name": "Signed",
+    "group": "Signed",
+    "enabled": true,
+    "type": "search",
+    "pages": null,
+        "search": {
+                    "terms":["Signed"],
+                    "regions": ["keys","values","paragraphs"],
+                    "include":[],
+                    "exclude":[]
+                    },
+        "text_extract": {
+        "type": "SHORT",
+        "method": "QA",
+        "question": ["Who signed it ?"],
+        "ignore": []
+
+        },
+       "expects":{
+        "keys_patterns":["no"],
+        "patterns":[],
+        "entities":[],
+        "combine_results":[],
+        "ignore_text":[]
+     
+     }
+     
+  }
+     
+     
+]
+}
