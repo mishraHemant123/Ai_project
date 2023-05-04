@@ -73,7 +73,7 @@ def main():
 
     st.subheader('Document AI : An integrated Platform as a Service(iPaaS)')
 
-    st.image(os.path.join('Images','banner_1.jpg'), use_column_width  = True)
+  #  st.image(os.path.join('Images','banner_1.jpg'), use_column_width  = True)
 #     st.markdown("<h1 style='text-align: center; color: white;'>Time to become a comic book character</h1>", unsafe_allow_html=True)
 
     st.markdown("<h2 style='text-align: center; color:black;'>Document AI : Smart Document Processing</h2>", unsafe_allow_html=True)
