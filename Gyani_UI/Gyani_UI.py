@@ -20,7 +20,7 @@ import time
 
 # interact with FastAPI endpoint
 backend = "http://127.0.0.1:5000/process_doc"
-dst='C:/Users/vikas.bhadouria/Documents/Gyani_AI/Gyani_Demo_VM_v1.1/Python/projects/Kapitus'
+# dst='C:/Users/vikas.bhadouria/Documents/Gyani_AI/Gyani_Demo_VM_v1.1/Python/projects/Kapitus'
 
 def process(Input_name,output_path, server_url: str):
     
